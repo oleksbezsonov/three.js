@@ -1,0 +1,18 @@
+namespace: three.js
+three.js:
+  defines: runnable
+  metadata:
+    name: three.js
+    description: JavaScript 3D library
+    icon: https://emojiapi.dev/api/v1/package.svg
+  containers:
+    three.js:
+      build: .
+  services:
+    8080-tcp:
+      container: three.js
+      port: 8080
+      host-port: 8080
+      publish: false
+      protocol: TCP
+      description: Application main port.
