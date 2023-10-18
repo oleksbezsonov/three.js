@@ -1,0 +1,10 @@
+namespace: three.js
+three.js:
+  defines: runnable
+  metadata:
+    name: three.js
+    description: JavaScript 3D library
+    icon: https://emojiapi.dev/api/v1/robot.svg
+  containers:
+    three.js:
+      build: .
